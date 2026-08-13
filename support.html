@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — The Super Bowl</title>
+<meta name="description" content="Get help with The Super Bowl app: FAQ, contact details and support.">
+<style>
+  @font-face { font-family:"Bright"; src:url("assets/fonts/Bright-Demo.otf") format("opentype"); font-weight:400; font-display:swap; }
+  @font-face { font-family:"Open Sans"; src:url("assets/fonts/OpenSans-Regular.ttf") format("truetype"); font-weight:400; font-display:swap; }
+  @font-face { font-family:"Open Sans"; src:url("assets/fonts/OpenSans-SemiBold.ttf") format("truetype"); font-weight:600; font-display:swap; }
+  @font-face { font-family:"Open Sans"; src:url("assets/fonts/OpenSans-Bold.ttf") format("truetype"); font-weight:700; font-display:swap; }
+  @font-face { font-family:"Open Sans"; src:url("assets/fonts/OpenSans-ExtraBold.ttf") format("truetype"); font-weight:800; font-display:swap; }
+  :root{ --green:#10302E; --terra:#B16B2D; --cream:#F3E9DF; --ink:#10302E; }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:smooth; }
+  body{ font-family:"Open Sans",system-ui,sans-serif; color:var(--ink); background:var(--cream); line-height:1.6; -webkit-font-smoothing:antialiased; }
+  a{ color:var(--terra); text-decoration:none; }
+  a:hover{ color:#8f5420; }
+  .wrap{ max-width:820px; margin:0 auto; padding:0 24px; }
+  .display{ font-family:"Bright",serif; font-weight:400; line-height:.98; }
+
+  header{ position:sticky; top:0; z-index:20; background:rgba(243,233,223,.9); backdrop-filter:blur(10px); border-bottom:1px solid rgba(16,48,46,.08); }
+  .nav{ display:flex; align-items:center; justify-content:space-between; height:76px; max-width:1120px; margin:0 auto; padding:0 24px; }
+  .nav img{ height:44px; display:block; }
+  .nav-links{ display:flex; gap:32px; align-items:center; font-weight:600; font-size:15px; }
+  .nav-links a{ color:var(--green); }
+
+  .page-hero{ padding:72px 0 40px; text-align:center; }
+  .page-hero h1{ font-size:clamp(44px,7vw,72px); color:var(--green); margin-bottom:14px; }
+  .page-hero p{ font-size:19px; color:#3c5a57; max-width:44ch; margin:0 auto; }
+
+  .cards{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin:40px 0 72px; }
+  .card{ background:#fff; border:1px solid rgba(16,48,46,.08); border-radius:20px; padding:26px 22px; text-align:center; box-shadow:0 12px 30px rgba(16,48,46,.05); }
+  .card .ic{ font-size:30px; margin-bottom:12px; }
+  .card h3{ font-size:17px; color:var(--green); margin-bottom:6px; }
+  .card a{ font-weight:700; }
+  @media(max-width:680px){ .cards{ grid-template-columns:1fr; } }
+
+  section{ padding:0 0 64px; }
+  h2.sec{ font-family:"Bright",serif; font-weight:400; font-size:38px; color:var(--green); margin-bottom:26px; }
+
+  .faq{ background:#fff; border:1px solid rgba(16,48,46,.08); border-radius:18px; overflow:hidden; }
+  details{ border-bottom:1px solid rgba(16,48,46,.08); }
+  details:last-child{ border-bottom:0; }
+  summary{ list-style:none; cursor:pointer; padding:20px 24px; font-weight:700; font-size:17px; color:var(--green); display:flex; justify-content:space-between; align-items:center; }
+  summary::-webkit-details-marker{ display:none; }
+  summary::after{ content:"+"; font-size:24px; color:var(--terra); font-weight:400; line-height:1; }
+  details[open] summary::after{ content:"–"; }
+  details p{ padding:0 24px 22px; color:#4a615e; font-size:15.5px; }
+
+  .contact{ background:var(--green); color:var(--cream); border-radius:24px; padding:44px 40px; }
+  .contact h2{ color:var(--cream); font-family:"Bright",serif; font-weight:400; font-size:34px; margin-bottom:10px; }
+  .contact p{ opacity:.85; margin-bottom:26px; }
+  .contact-rows{ display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
+  .crow{ background:rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.14); border-radius:14px; padding:18px 20px; }
+  .crow small{ display:block; text-transform:uppercase; letter-spacing:.1em; font-size:11.5px; opacity:.6; margin-bottom:5px; }
+  .crow a, .crow span{ color:var(--cream); font-weight:600; font-size:16px; }
+  .crow a:hover{ color:#fff; }
+  @media(max-width:680px){ .contact-rows{ grid-template-columns:1fr; } }
+
+  footer{ background:var(--green); color:var(--cream); padding:40px 0; margin-top:24px; }
+  .copy{ text-align:center; font-size:13.5px; opacity:.7; }
+  .copy a{ color:var(--cream); opacity:.9; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a href="index.html"><img src="assets/logo.png" alt="The Super Bowl"></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-hero">
+    <div class="wrap">
+      <h1 class="display">How can we help?</h1>
+      <p>Find answers to common questions, or reach our team directly — we're happy to help.</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="cards">
+      <div class="card"><div class="ic">✉️</div><h3>Email us</h3><a href="mailto:trust.dev303@gmail.com">trust.dev303@gmail.com</a></div>
+      <div class="card"><div class="ic">💬</div><h3>Live chat</h3><span style="color:#4a615e;font-size:14.5px;">In the app, Profile → Help</span></div>
+      <div class="card"><div class="ic">📞</div><h3>Call us</h3><a href="tel:+201008757737">+20 10 08757737</a></div>
+    </div>
+
+    <section id="faq">
+      <h2 class="sec">Frequently asked</h2>
+      <div class="faq">
+        <details open><summary>How do I place an order?</summary><p>Open the app, choose delivery, pickup or dine-in, browse the menu or build your own bowl, add items to your cart, and check out. You'll get updates as your order is prepared.</p></details>
+        <details><summary>Which order types are available?</summary><p>You can order for delivery to your address, pickup from a selected branch, or dine-in. Switch between them at the top of the home screen.</p></details>
+        <details><summary>Can I customize my bowl?</summary><p>Yes. Tap "Create your own bowl" to choose your base, protein and add-ons. You can adjust quantities before adding to your cart.</p></details>
+        <details><summary>How do I change or cancel an order?</summary><p>If your order hasn't been prepared yet, contact us right away by email or phone and we'll help. Once an order is in preparation it may not be possible to change it.</p></details>
+        <details><summary>How do I manage my account or addresses?</summary><p>Go to Profile in the app to update your details, saved addresses and payment methods.</p></details>
+        <details><summary>I'm having a technical problem with the app.</summary><p>Make sure you're on the latest version from the App Store or Google Play. If the issue continues, email us at trust.dev303@gmail.com with your device model and a short description, and we'll get back to you.</p></details>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact">
+        <h2>Still need help?</h2>
+        <p>Reach us directly and we'll respond as soon as we can.</p>
+        <div class="contact-rows">
+          <div class="crow"><small>Email</small><a href="mailto:trust.dev303@gmail.com">trust.dev303@gmail.com</a></div>
+          <div class="crow"><small>Phone</small><a href="tel:+201008757737">+20 10 08757737</a></div>
+          <div class="crow"><small>Hours</small><span>Daily · 10:00 – 23:00</span></div>
+          <div class="crow"><small>Response time</small><span>Within 24 hours</span></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="copy">© 2026 The Super Bowl. All rights reserved. · <a href="index.html">Home</a> · <a href="privacy.html">Privacy</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
